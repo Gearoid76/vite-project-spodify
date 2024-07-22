@@ -1,42 +1,163 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* ------------- App --------- */
+  .App {
+    background-color: rgb(255,255, 255,0.5);
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/dj-decks.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .search-bar-container {
+    padding-top: 20vh;
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
+  
+  .resultAndPlaylistColumn {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  /* ------------- New Playlist --------- */
+  .new-playlist {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 9px rgb(255,255, 255);
+    border-radius: 10px;
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  
+  .new-playlist:hover {
+    background-color: rgba(255, 255, 255, 0.57);
+  }
+  
+  .remove-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  /* ------------- Search Bar --------- */
+  .input-wrapper {
+    background-color: rgb(255,255,255,0.5);
 
-.card {
-  padding: 2em;
-}
+    width: 100%;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0 0 8px #ddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.25rem;
+    width: 100%;
+    margin-left: 5px;
+    color: rgb(255,255, 255,0.5);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  #search-icon {
+    color: royalblue;
+  }
+  
+  .save-button {
+    width: 80%;
+    font-size: 1.25rem;
+    background-color: transparent;
+    align-self: center;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0 15px;
+    box-shadow: 0 0 10px #fefefe;
+  }
+  
+  /* ------------- Search Result --------- */
+  .search-result {
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.read-the-docs {
-  color: #888;
-}
+  
+  .search-result:hover {
+    background-color: rgb(255,255, 255,0.5);
+  }
+  
+  .result-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .result-name {
+    font-weight: bold;
+  }
+  
+  .result-artist,
+  .result-album {
+    color: #555;
+  }
+  
+  .add-button {
+    background: none;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  .add-button:hover {
+    color: #0056b3;
+  }
+  .resultHolder {
+    border: 10%;
+  }
+  
+  /* ------------- Search Results List --------- */
+  .results-list {
+    width: 48%;
+    background-color:  rgb(255,255, 255,0.5);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import '../App.css';
-import { getSpotifyToken, searchSpotify } from './spotify'
+import { getSpotifyToken, searchSpotify } from './Spotify'
 
 export const SearchBar = ({ setResults }) => {
     const [input, setInput] = useState("")

@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 const clientId = import.meta.env.VITE_CLIENT_ID;
 const clientSecret = import.meta.env.VITE_CLIENT_SECRET
 const authEndpoint = 'https://accounts.spotify.com/api/token';

@@ -28,6 +28,30 @@
     flex-direction: column;
     align-items: center;
   }
+  @media only screen and (max-width: 1280px){
+         
+          .search-bar-container {
+          width: 50%;
+  }
+}
+@media only screen and (max-width: 940px){
+        .App {
+          background-image: url(./assets/djwoman.jpg);
+          background-size: cover;
+        }
+          .search-bar-container {
+          width: 70%;
+        }
+        .save-button {
+          width: 100%;
+          font-size: 1rem;
+        }
+        input {
+          font-size: 1rem;
+        }
+}
+
+
   
   .resultAndPlaylistColumn {
     display: flex;

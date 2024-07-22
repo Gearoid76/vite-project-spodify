@@ -4,7 +4,7 @@ import { NewPlayList } from './components/NewPlayList';
 import { redirectToAuthCodeFlow, getAccessToken } from './authentication';
 import { createSpotifyPlaylist } from './components/createSpotifyPlaylist'; 
 import { addTracksToPlaylist } from './components/addTracksToPlaylist';
-import '../src/App.css';
+import './App.css';
 import { SearchBar } from './components/SearchBar';
 import { SearchResultsList } from './components/SearchResultsList';
 

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { NewPlayList } from './components/newPlayList';
-import { redirectToAuthCodeFlow, getAccessToken } from '../authentication';
+import { redirectToAuthCodeFlow, getAccessToken } from './authentication';
 import { createSpotifyPlaylist } from './components/createSpotifyPlaylist';
 import { addTracksToPlaylist } from './components/addTracksToPlaylist';
-import './src/App.css';
+import '/App.css';
 import { SearchBar } from './components/SearchBar';
 import { SearchResultsList } from './components/searchResultsList';
 
